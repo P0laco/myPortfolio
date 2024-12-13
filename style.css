@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Adjust the width of the sidebar */
+    height: 100%;
+    background-color: #343a40;
+    z-index: 1050;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%); /* Initially hidden */
+}
+
+#sidebar.show {
+    transform: translateY(0); /* Show sidebar */
+}
+
+#navbar{
+    position: relative;
+    z-index: 1040;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
